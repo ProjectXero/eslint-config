@@ -68,6 +68,20 @@ module.exports = {
     /* JavaScript/TypeScript JSX files ONLY */
     {
       files: '**/*.{j,t}sx',
+      parserOptions: {
+        env: {
+          browser: true,
+        },
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      settings: {
+        react: {
+          pragma: 'React',
+          version: 'detect',
+        },
+      },
       extends: [
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
