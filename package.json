@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "FallingFish shared ESLint configuration",
   "main": "index.js",
+  "files": [],
   "repository": "https://github.com/ProjectXero/eslint-config",
   "author": "Matthew Lanigan <rintaun@gmail.com>",
   "license": "MIT",
