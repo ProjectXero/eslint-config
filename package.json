@@ -14,7 +14,8 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsonc": "^0.7.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "typescript": "latest"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.4.0",
@@ -24,6 +25,7 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsonc": "^0.7.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "typescript": ">= 3.9.0"
   }
 }
