@@ -1,6 +1,6 @@
 {
   "name": "@fallingfish/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FallingFish shared ESLint configuration",
   "main": "index.js",
   "repository": "https://github.com/ProjectXero/eslint-config",

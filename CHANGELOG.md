@@ -1,3 +1,10 @@
+### [1.0.1](https://github.com/ProjectXero/eslint-config/compare/v1.0.0...v1.0.1) (2020-12-10)
+
+
+### Bug Fixes
+
+* add README.md ([6771007](https://github.com/ProjectXero/eslint-config/commit/6771007b48e9f0e25753036108cd88d23f657b16))
+
 ## 1.0.0 (2020-12-10)
 
 
