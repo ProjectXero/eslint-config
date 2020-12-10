@@ -12,23 +12,29 @@ module.exports = {
     ecmaVersion: 2019,
     sourceType: 'module',
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:prettier/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'plugin:jsonc/auto-config',
-  ],
-  plugins: ['@typescript-eslint', 'prettier', 'import'],
+  extends: ['plugin:prettier/recommended'],
+  plugins: ['prettier'],
   rules: {},
   overrides: [
+    /* JavaScript and TypeScript files, including JSX */
+    {
+      files: '**/*.{j,t}s{,x}',
+      parser: '@typescript-eslint/parser',
+      extends: [
+        'eslint:recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+      ],
+      plugins: ['@typescript-eslint', 'import'],
+    },
+    /* ONLY TypeScript files (including JSX) */
     {
       files: '**/*.ts{,x}',
       parser: '@typescript-eslint/parser',
       extends: [
         'plugin:@typescript-eslint/recommended',
         'prettier/@typescript-eslint',
+        'plugin:import/typescript',
       ],
       rules: {
         'no-unused-vars': 'off',
@@ -43,6 +49,47 @@ module.exports = {
           { args: 'none', argsIgnorePattern: '^_' },
         ],
       },
+    },
+    /* GraphQL files */
+    {
+      files: '**/*.g{,raph}ql',
+      plugins: ['graphql'],
+      rules: {
+        'graphql/capitalized-type-name': ['warn', { env: 'literal' }],
+        'graphql/named-operations': ['error', { env: 'literal' }],
+        'graphql/no-deprecated-fields': ['error', { env: 'literal' }],
+        'graphql/required-fields': [
+          'error',
+          { requiredFields: ['id'], env: 'literal' },
+        ],
+        'graphql/template-strings': ['error', { env: 'literal' }],
+      },
+    },
+    /* JavaScript/TypeScript JSX files ONLY */
+    {
+      files: '**/*.{j,t}sx',
+      extends: [
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'plugin:jsx-a11y/recommended',
+      ],
+      plugins: ['react', 'react-hooks', 'jsx-a11y'],
+      rules: {
+        'react/react-in-jsx-scope': 'off',
+        'react/no-unescaped-entities': ['error', { forbid: ['>', '}'] }],
+        'jsx-a11y/anchor-is-valid': [
+          'error',
+          {
+            components: ['Link'],
+            specialLink: ['hrefLeft', 'hrefRight'],
+            aspects: ['invalidHref', 'preferButton'],
+          },
+        ],
+      },
+    },
+    {
+      files: '**/*.json{,c,5}',
+      extends: ['plugin:jsonc/auto-config'],
     },
   ],
 }
