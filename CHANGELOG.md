@@ -1,3 +1,10 @@
+### [1.0.2](https://github.com/ProjectXero/eslint-config/compare/v1.0.1...v1.0.2) (2020-12-10)
+
+
+### Bug Fixes
+
+* don't include everything in the tarball, ugh ([d88e7be](https://github.com/ProjectXero/eslint-config/commit/d88e7be4591bb2c874fc145de864d16115b90fac))
+
 ### [1.0.1](https://github.com/ProjectXero/eslint-config/compare/v1.0.0...v1.0.1) (2020-12-10)
 
 
