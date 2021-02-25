@@ -1985,10 +1985,10 @@ eslint-plugin-import@^2.21.2:
     resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-jsonc@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsonc/-/eslint-plugin-jsonc-0.7.1.tgz#3abbb81c3a81a7d934865f84b4f5ea0014738c45"
-  integrity sha512-6AyZSV1iqiUnTscrwMaGlhQsuIxf6POrD+oOR6hOHMRDwwso9ZxtMW1DETLGkiEJaRj35CkRDe2niu6RP+uqpQ==
+eslint-plugin-jsonc@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsonc/-/eslint-plugin-jsonc-1.0.0.tgz#8c9ac4c881ded9942750596ccf0a0d2e11bfef15"
+  integrity sha512-P+/p5knj7AQj3FLfypOqL062zCl/JMv/c9mgL6api40kzhItEKPovUuZIgkMLfNqAqr8l9iHaYRf1BB6ATR3eg==
   dependencies:
     eslint-utils "^2.1.0"
     jsonc-eslint-parser "^0.6.0"
