@@ -103,6 +103,9 @@ module.exports = {
     {
       files: '**/*.json{,c,5}',
       extends: ['plugin:jsonc/auto-config'],
+      rules: {
+        'jsonc/indent': 'off',
+      },
     },
   ],
 }
