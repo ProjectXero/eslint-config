@@ -49,12 +49,40 @@ module.exports = {
         ],
       },
     },
-    /* GraphQL files */
+    /* ALL GraphQL files */
     {
       files: '**/*.g{,raph}ql',
       extends: ['plugin:@graphql-eslint/recommended'],
       rules: {
         'prettier/prettier': 'error',
+        '@graphql-eslint/naming-convention': [
+          'error',
+          {
+            /*
+             * This is a workaround for introspection fields like __typename.
+             * See: https://github.com/dotansimha/graphql-eslint/issues/664
+             */
+            leadingUnderscore: 'allow',
+          },
+        ],
+        '@graphql-eslint/strict-id-in-types': [
+          'error',
+          {
+            acceptedIdNames: ['id'],
+            acceptedIdTypes: ['ID'],
+            exceptions: {
+              types: ['Query', 'Mutation', 'Subscription'],
+              suffixes: ['Payload', 'Error'],
+            },
+          },
+        ],
+      },
+    },
+    /* GraphQL Schema files */
+    {
+      files: '**/schema.g{,raph}ql',
+      rules: {
+        '@graphql-eslint/executable-definitions': 'off',
       },
     },
     /* JavaScript/TypeScript JSX files ONLY */
