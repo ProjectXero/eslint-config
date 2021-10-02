@@ -42,5 +42,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.0.5",
     "typescript": ">= 3.9.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
   }
 }
