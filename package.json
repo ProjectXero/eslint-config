@@ -44,6 +44,7 @@
     "typescript": ">= 3.9.0"
   },
   "scripts": {
+    "lint": "eslint .",
     "preinstall": "npx only-allow pnpm"
   }
 }
