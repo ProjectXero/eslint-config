@@ -33,7 +33,6 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       extends: [
         'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint',
         'plugin:import/typescript',
       ],
       rules: {
@@ -104,6 +103,9 @@ module.exports = {
     {
       files: '**/*.json{,c,5}',
       extends: ['plugin:jsonc/auto-config'],
+      rules: {
+        'jsonc/indent': 'off',
+      },
     },
   ],
 }
