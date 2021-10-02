@@ -1,3 +1,11 @@
+### [1.0.4](https://github.com/ProjectXero/eslint-config/compare/v1.0.3...v1.0.4) (2021-10-02)
+
+
+### Bug Fixes
+
+* eslint jsonc and prettier plugin conflicts ([0836c78](https://github.com/ProjectXero/eslint-config/commit/0836c7816ea26b82dc3338cf5dd05d48cd23b18d))
+* eslint jsonc and prettier plugin conflicts ([#105](https://github.com/ProjectXero/eslint-config/issues/105)) ([039652c](https://github.com/ProjectXero/eslint-config/commit/039652c7e6a81e598612c3ab4f1198ad30ae2015))
+
 ### [1.0.3](https://github.com/ProjectXero/eslint-config/compare/v1.0.2...v1.0.3) (2021-10-02)
 
 
