@@ -52,16 +52,9 @@ module.exports = {
     /* GraphQL files */
     {
       files: '**/*.g{,raph}ql',
-      plugins: ['graphql'],
+      extends: ['plugin:@graphql-eslint/recommended'],
       rules: {
-        'graphql/capitalized-type-name': ['warn', { env: 'literal' }],
-        'graphql/named-operations': ['error', { env: 'literal' }],
-        'graphql/no-deprecated-fields': ['error', { env: 'literal' }],
-        'graphql/required-fields': [
-          'error',
-          { requiredFields: ['id'], env: 'literal' },
-        ],
-        'graphql/template-strings': ['error', { env: 'literal' }],
+        'prettier/prettier': 'error',
       },
     },
     /* JavaScript/TypeScript JSX files ONLY */
