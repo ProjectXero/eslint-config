@@ -1,3 +1,11 @@
+### [1.0.6](https://github.com/ProjectXero/eslint-config/compare/v1.0.5...v1.0.6) (2021-10-02)
+
+
+### Bug Fixes
+
+* graphql linting rule tweaks ([54af855](https://github.com/ProjectXero/eslint-config/commit/54af855ec918d7923b0b0077ca59c312e4cda2d2))
+* graphql linting rule tweaks ([#107](https://github.com/ProjectXero/eslint-config/issues/107)) ([64ade4b](https://github.com/ProjectXero/eslint-config/commit/64ade4b8e5aceba7d585a54101afde290a443971))
+
 ### [1.0.5](https://github.com/ProjectXero/eslint-config/compare/v1.0.4...v1.0.5) (2021-10-02)
 
 
