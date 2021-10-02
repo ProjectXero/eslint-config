@@ -34,6 +34,8 @@ jobs:
         with:
             version: 6.16.0
 
+      - run: pnpm install
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
