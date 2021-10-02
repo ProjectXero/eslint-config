@@ -1,3 +1,11 @@
+### [1.0.3](https://github.com/ProjectXero/eslint-config/compare/v1.0.2...v1.0.3) (2021-10-02)
+
+
+### Bug Fixes
+
+* disable jsonc/indent rule ([f4194b4](https://github.com/ProjectXero/eslint-config/commit/f4194b46c61c3a6a8ee3a2fb0fdcbb713aa8b946))
+* remove prettier/[@typescript-eslint](https://github.com/typescript-eslint) config ([5aa3385](https://github.com/ProjectXero/eslint-config/commit/5aa33851d800600fe14febdd456822397bbffd10))
+
 ### [1.0.2](https://github.com/ProjectXero/eslint-config/compare/v1.0.1...v1.0.2) (2020-12-10)
 
 
